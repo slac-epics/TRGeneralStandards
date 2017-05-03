@@ -30,7 +30,7 @@ DBD += genStdsTestIoc.dbd
 genStdsTestIoc_DBD += base.dbd
 
 # Include dbd files from all support applications:
-genStdsTestIoc_DBD += asyn.dbd ADSupport.dbd NDPluginStdArrays.dbd NDPluginAttribute.dbd trGenStds.dbd
+genStdsTestIoc_DBD += asyn.dbd ADSupport.dbd NDPluginSupport.dbd trGenStds.dbd
 
 # Add all the support libraries needed by this IOC
 genStdsTestIoc_LIBS += trGenStds trCore NDPlugin ADBase asyn
