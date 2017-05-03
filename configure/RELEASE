@@ -6,8 +6,8 @@
 # Check for valid macro definitions
 # You can add tests here to make sure RELEASE.local defined
 # valid macros for all the module dependencies
-ifeq ($(wildcard $(TRCORE)/include),)
-$(error Invalid TRCORE: $(TRCORE))
+ifeq ($(wildcard $(TR_CORE)/include),)
+$(error Invalid TR_CORE: $(TR_CORE))
 endif
 ifeq ($(wildcard $(ASYN)/include),)
 $(error Invalid ASYN: $(ASYN))

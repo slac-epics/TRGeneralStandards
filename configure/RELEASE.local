@@ -21,7 +21,7 @@
 # ==========================================================
 ASYN_MODULE_VERSION     = R4.31-0.1.0
 ADCORE_MODULE_VERSION   = R2.6-1.0.0
-TRCORE_MODULE_VERSION   = R0.0.0-0.2.0
+TR_CORE_MODULE_VERSION  = R0.0.0-0.2.0
 
 # ============================================================
 # Define module paths using pattern
@@ -31,7 +31,7 @@ TRCORE_MODULE_VERSION   = R0.0.0-0.2.0
 # ============================================================
 ASYN	= $(EPICS_MODULES)/asyn/$(ASYN_MODULE_VERSION)
 ADCORE	= $(EPICS_MODULES)/ADCore/$(ADCORE_MODULE_VERSION)
-TRCORE  = $(EPICS_MODULES)/TRCore/$(TRCORE_MODULE_VERSION)
+TR_CORE = $(EPICS_MODULES)/TRCore/$(TR_CORE_MODULE_VERSION)
 
 # Set EPICS_BASE last so it appears last in the DB, DBD, INCLUDE, and LIB search paths
 EPICS_BASE              = $(EPICS_SITE_TOP)/base/$(BASE_MODULE_VERSION)
