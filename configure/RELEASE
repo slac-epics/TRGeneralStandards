@@ -1,0 +1,20 @@
+# RELEASE
+# Local paths to EPICS_BASE and modules should be
+# defined in a RELEASE.local file
+-include $(TOP)/configure/RELEASE.local
+
+# Check for valid macro definitions
+# You can add tests here to make sure RELEASE.local defined
+# valid macros for all the module dependencies
+ifeq ($(wildcard $(TR_CORE)/include),)
+$(error Invalid TR_CORE: $(TR_CORE))
+endif
+ifeq ($(wildcard $(ASYN)/include),)
+$(error Invalid ASYN: $(ASYN))
+endif
+ifeq ($(wildcard $(ADCORE)/include),)
+$(error Invalid ADCORE: $(ADCORE))
+endif
+ifeq ($(wildcard $(EPICS_BASE)/include),)
+$(error Invalid EPICS_BASE: $(EPICS_BASE))
+endif

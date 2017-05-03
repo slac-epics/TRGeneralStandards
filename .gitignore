@@ -1,0 +1,11 @@
+configure/*.local
+O.*/
+bin/
+lib/
+dbd/
+db/
+include/
+envPaths*
+*~
+*.log
+*.swp
